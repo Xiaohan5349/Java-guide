@@ -1,0 +1,53 @@
+whet the data type in a class is not certain, we can use the object which is Autoboxing and unboxing
+class Point{
+  object x;
+  object y;
+  public void setX(object x){
+    this.x = x
+    }
+  public void setY(object y){
+    this.y = y
+    }
+  public object getX(){
+    return x;
+    }
+  public object getY(){
+    return y;
+    }
+}
+it's easy to get classCastException when unboxing, so we can use Generics
+class <T1, T2> Point1{
+  T1 x;
+  T2 y;
+  public void setX(T1 x){
+    this.x = x
+    }
+  public void setY(T2 y){
+    this.y = y
+    }
+  public T1 getX(){
+    return x;
+    }
+  public T2 getY(){
+    return y;
+    }
+  public <T1, T2> setXY(T1 x, T2 y){
+    this. x = x;
+    this.y = y;
+    }
+}
+public class Test{
+  public static void main(String[] args){
+    Point p = new Point();
+    p.setX(10); p.setY(20);
+    int x = (Integer)p.getX();  // unboxing
+    int y = (Integer)p.getY();
+    p.setX(10.2); p.setY(20.3);
+    double x = (Integer)p.getX();  // unboxing(shoud decrease this)
+    double y = (Integer)p.getY();
+    Point1<Double String> p1 = new Point1();// use generics
+    p1.setX(1.24); p1.setY("hello");
+    double x1 = p1.getX(); String x2 = p1.getY();
+    p1.setXY(x1, y1);
+}
+we can also create generics interface. we can use extends to limit the type of generics.
