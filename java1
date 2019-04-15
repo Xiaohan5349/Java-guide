@@ -1,0 +1,4 @@
+primitive data type: int, short, long, float, double, char, byte, boolean, null
+the difference between == and equals  when the equals method is from object, == is same with equals. howerver from other class
+this method may be overwriten, like the String.equals(). it's compare the 
+enum type
