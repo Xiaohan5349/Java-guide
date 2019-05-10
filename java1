@@ -6,3 +6,13 @@ equal are same.
 
 each variable has a name(which represents the location in the memory) and data type, size and value(which represents the data stroed in the
 memory). Each variable has its own scope.
+
+random: Math.random    Random r1 = new Random(value), r1.nextInt/nextBoolean/nextDouble
+
+final static define constant
+
+In java's output: string + number = string, number + number + string = sum+ string
+
+static import: import static java.lang.Math.*, we can use abs(100) directly without Math.abs()
+
+\t 8 space   string\t 8 space including string.
