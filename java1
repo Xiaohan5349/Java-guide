@@ -16,3 +16,5 @@ In java's output: string + number = string, number + number + string = sum+ stri
 static import: import static java.lang.Math.*, we can use abs(100) directly without Math.abs()
 
 \t 8 space   string\t 8 space including string.
+
+when compare two double/float value which is bigger, we should use the abs of the sub of the two variable with a specific field.
