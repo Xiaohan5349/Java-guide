@@ -18,3 +18,16 @@ static import: import static java.lang.Math.*, we can use abs(100) directly with
 \t 8 space   string\t 8 space including string.
 
 when compare two double/float value which is bigger, we should use the abs of the sub of the two variable with a specific field.
+
+String are objects in java, so we should use String.equals() instead of == to see if two strings are same.
+
+Integer.parseInt(String s, int radix) pares the string s to be a interger with the specific radix.
+
+differences of Integer.parseInt() and Integer.valueOf(): parseInt() return int and valueOf() return Integer,and valueOf() will maintain a
+cache if the int is in the range of cache, it will get the object from the cache else it will create a new object.
+
+final and static: static not refer to different objects, it's only one and final will refer to different objects and it can't be changed.
+
+Calendar.get(Calendar.month) need to +1 as the month begins at 0; Calendar.get(Calendar.Day_Of_Week) need to -1 as the week begins at Sunday,
+and the sunday weekday is 0.
+
