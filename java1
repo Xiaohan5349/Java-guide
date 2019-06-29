@@ -31,3 +31,4 @@ final and static: static not refer to different objects, it's only one and final
 Calendar.get(Calendar.month) need to +1 as the month begins at 0; Calendar.get(Calendar.Day_Of_Week) need to -1 as the week begins at Sunday,
 and the sunday weekday is 0.
 
+in java, all argument is passed by value not reference, you can change the status of a object but now way to let him point a new object.
