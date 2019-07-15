@@ -36,5 +36,5 @@ in java, all argument is passed by value not reference, you can change the statu
 1. final class can't be inherited, all members and methods in final class will be final implicit.
 2. final variable can't be changed. when you use final to define a variable which is primitive and String and initilized, JVM
 will regard it as a constant. with final the variable can't be changed or point another object, but the member of the object can
-change.
-3. We can use final static to define a constant.
+change. We can use final static to define a constant.
+3. Final method can't be Overridden.
