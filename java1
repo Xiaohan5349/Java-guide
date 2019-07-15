@@ -38,3 +38,5 @@ in java, all argument is passed by value not reference, you can change the statu
 will regard it as a constant. with final the variable can't be changed or point another object, but the member of the object can
 change. We can use final static to define a constant.
 3. Final method can't be Overridden.
+4. we can use final to creat class that's not allowed to be changed. Its propeties can't be changed and it can't have child class.(like String).
+this class can be used in multi-thread safely and convinent. As we can access them without lock, it's high perfomanced.
