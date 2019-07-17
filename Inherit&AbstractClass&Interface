@@ -1,0 +1,36 @@
+1. base class must call the constructor of parent class. It will automatic call the default constructor or
+  the no-parameter constructor. If the parent class only have the constructor with parameter, you need to use
+  super(parameter) to call it or it will report an error(the super() should be the first line of the constructor).
+
+2. pulic       all variabl
+  protected    current class, same package, child class
+  defalut      current class and same package
+  privat       current class
+               scope
+
+3.method between parent and child class:
+extend: child class define a class that parent doesn't have
+override: parent and child class define the same class
+overload: parent and child class dfine same name class but different parameter
+notice: when you override a method, its visibility should be equal or more than the method in base class, so the toString() must
+be Overridden in public class
+final and static method can't be Overridden.
+Overridden method should throw less or equal exceptions than the original method.
+
+4. any oject that join the calculate of a String will call implicit its toString() method
+
+5. abstract class only define which method should exist and can't create object, it will extends a child class to
+finish these methods and create new object.
+A class have abstract mehod must be a abstract class, abstract class can have normal methods.
+
+6. three kinds of abstract class:
+(1) define a abstract method
+(2)extend a abstract class and haven't implement the abstract methods completely.
+(3)implement a interface and haven't implement all the abstract methods.
+
+7. the class that implements the interface must implement all the methods that the parent and child interface define, then it
+can be instantiated.
+
+8. the constant defined in interface must be initialized.
+
+9. a class can implement multi interfaces but inherit only one class.
