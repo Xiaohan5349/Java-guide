@@ -1,0 +1,14 @@
+1. the most essential feature of polymorphism is the parent class/interface can refer to the object of
+child class/interface-implemented class. In another word, the child class object can be used as a parent class object.
+parent variable can refer to child class object directly, child variable need to cast type. we can use the instanceof to
+judge if the type cast is feasible.
+
+2. when child class and parent class define same-name method and  field. It will be totally different because of the work of
+polymorphism.
+        parent a = new child();    parent b = new parent();
+
+method: when you call method, it will depends on the right side of the equal, that's say the method is determined by the type
+of object. that the feature of polymorphism.
+
+field: when you access the variable, it will depends on the left side of the equal, that's say the method is determined by the
+type of reference variable. so the polymorphism doesn't work on field.
