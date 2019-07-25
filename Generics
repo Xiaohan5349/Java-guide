@@ -1,0 +1,9 @@
+1. with generics you can store just one type of data sets like arraylist.
+
+2. Generics object can do autoboxing. Generics parameters must be reference type, can't be primitive type.
+Generics can't define array.  Type variable/parameter(T) can't be instantiated.
+
+3. Generic Type can't extend from Throwable, so we can't catch type variable(T) Exception.
+(public class Problem< T > extends Exception) error!!!!
+
+4. the type variable/parameter(T) member of a class can't be static 

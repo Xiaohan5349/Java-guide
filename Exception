@@ -1,0 +1,27 @@
+1. Throwable class has two child class: Exception and Error.
+The Exception that can be catched: Check Exception and Runtime Exception
+Runtime Exception and Error are unchecked exception.
+
+2. the polymorphism of Exception: there can be multi cathc block each catch a kind of Exception. Following a try there
+are two catch blocks catching the same Exception is a Error. A catch block which catch Exception object can catch call
+objects of Exception class and its child class.
+so if you a catch(Exception e) before other catch blocks, all other catch block won't be executed.
+
+3. we write a try-catch-finally block and try block throws an Exception and then when it execut finally block, if there is
+a Exception in finally block, the former Exception will be banned and the catch block will catch the Exception from finally.
+
+4.  try-with-resources
+  try(classname a = new classname){
+    //use object a
+  }cathc(Exception e){
+
+  }
+  in this code, the () behind try is the difference with the traditional code try-catch. in this code, the class
+  that create a should inplement the interface AutoCloseable. Then the close() method will be executed automaticcally.
+
+5. When to catch exception VS when to throw the exception:
+when you have no idea what the method will do you can throw the exception.
+when you know that what the method will go with the exception you can catch it and add some contexts.
+
+6. A exception that thrown by a child class, can't be the parent class of the exception thrown by the parent class.
+that's say that a child class can't throw a bigger exception than the parent class.
