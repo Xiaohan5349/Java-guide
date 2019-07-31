@@ -1,0 +1,17 @@
+1. in java, all data are passed by value!!!!!
+
+for pirmitive data, jvm will create a copy of it and assign the copy to the parameter. As for reference, it will change the address
+to points to different object and leave the original object alone. If a object that no reference points to it will be recycle by
+the Garbage collector.
+
+we can see the the pass of parameter is essentially the assign of value, so it will have auto-cast inside the process.
+
+PS: The store of the String and array.
+The local variable and method parameter store with the same way in jvm. they all store in the created room in the stack. When the
+method goes into the creation begins and when the method quit they are recycled. boolean/byte/short/char/int/float/reference 4 bytes£¬
+long/double 8 bytes. so the space that the method will occupy can be calculated while compile.
+
+we all konw stack and heap. Each theard has its own stack and all threads share a heap. When we declare a variable in the method, it
+just create space in stack. Of course when we use new Object() we create some memory room in the heap for it and its initialization.
+but for the reference we just give it 4 bytes to store the address of the object in the stack. So the local variable and method
+parameter are impossible to be accessed by other method in the same thread and same method in other threads.

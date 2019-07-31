@@ -7,8 +7,11 @@ judge if the type cast is feasible.
 polymorphism.
         parent a = new child();    parent b = new parent();
 
+we call this up-casting, as the reference of a is parent, some unique member of child class are not accessed by a, if we want to
+access them we need a cast like this: (child)a, this will change the reference not the object type.
+
 method: when you call method, it will depends on the right side of the equal, that's say the method is determined by the type
 of object. that the feature of polymorphism.
 
-field: when you access the variable, it will depends on the left side of the equal, that's say the method is determined by the
+field: when you access the variable, it will depends on the left side of the equal, that's say the field is determined by the
 type of reference variable. so the polymorphism doesn't work on field.

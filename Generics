@@ -6,4 +6,25 @@ Generics can't define array.  Type variable/parameter(T) can't be instantiated.
 3. Generic Type can't extend from Throwable, so we can't catch type variable(T) Exception.
 (public class Problem< T > extends Exception) error!!!!
 
-4. the type variable/parameter(T) member of a class can't be static 
+4. the type variable/parameter(T) member of a class can't be static.
+
+5. why static method can't access the non-static member of the class? Because we konw that the static method belong to the whole
+class that we can use ClassName.SataicMethod to call it, if we allow it to access the non-static member, so assume we have two
+object of these class, which member will the static method access???
+
+so that's why when we define a static generic method, we need to declare <T> before the method name like this:
+Public static<G> void<T> doIt()
+We should notice that the generic type the static method define has no relationship with the generic type of the class, so that code is better
+class A<T>{
+  static<G> void doIt(){}
+}
+
+
+6. one thing that the method with a generic<parentCLass> parameter method can't use a generic<childClass> object as the practic parameter.
+
+5. two way to extends a generic class:
+class child<T> extends parent<T>            class child extends parent<String>
+
+6. the polymorphism in Generics
+
+7. wildcard types ¿‡–ÕÕ®≈‰∑˚
