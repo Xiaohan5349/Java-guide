@@ -28,3 +28,18 @@ class child<T> extends parent<T>            class child extends parent<String>
 6. the polymorphism in Generics
 
 7. wildcard types ¿‡–ÕÕ®≈‰∑˚
+
+8. Type erasure    Covariance     Contravariance
+Array has the covriance means that as the object is super class of String, object[] is the super class of String[]
+Type erasue is the core to achieve the generics. etc
+List<String> abc = new ArrayList();
+List<Integer> cba = new ArrayList()
+While compiling, the type of generics like String and Integer are all erasured as object(while no constraint exists), that's why we can't assign like abc = cba, as the uncertain
+of the data type may throws a error.
+
+if the generics have multi constraints, it will erasure based on the first constraint. examples:
+<T extends Comparable & Serializable> T mtd(){ }             Comparable mtd(){ }
+
+why this happened is that the JVM doesn't support generics directly.
+
+type check aims at reference not object.
