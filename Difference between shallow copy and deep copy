@@ -1,0 +1,12 @@
+1. ShallowCopy just copy the values of references in the class while the deep copy will copy the references.
+etc:
+A{
+  B b;
+}
+B{
+  int i = 100.
+}
+ShallowCopy of A will just copy the values of B, if you change the copyA.b, the A.b won't be changed, but if you change copyA.b.i, A.b.i will be changed.
+Deepcopy will also copy a new object of B inside A.
+
+2. marker interface: an empty interface. 

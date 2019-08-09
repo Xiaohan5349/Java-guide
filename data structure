@@ -1,0 +1,12 @@
+1. three iterators:
+ Enumeration : old version of iterator, can only used on legacy collections(Vector, Hashtable), can just move forward, no way to remove.
+
+ Iterator: The most universal iterator, the only iterator that can be used on all collections framework. It can remover element,
+ however it can only move forward and no add and replace method.
+
+ ListIterator: It can only be used on List, can move bi-dimensional and has add and replace method.
+ ListIterator has no current element; its cursor position always lies between the element that would be returned by a call to p
+ revious() and the element that would be returned by a call to next(). So without next() or Previous() method, you can't call
+ set() method as the cursor has no element positon.
+
+ Ps:  initially any iterator reference will point to the index just before the index of first element in a collection.
