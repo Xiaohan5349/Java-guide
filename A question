@@ -1,4 +1,4 @@
-In a class I call Vector.clone; then I see I need to execute type cast as the function return a object not a vector.
+1. In a class I call Vector.clone; then I see I need to execute type cast as the function return a object not a vector.
 Then I go to see the source code then I find the method is a object method but it return a vector variable, so I consider that's
 a auto type cast in the return value between parent class and son class. but I wonder why it happens.
 we can see that we define a Son object and return it in the parent-method.
@@ -41,3 +41,12 @@ public Parent text() {
   return a;
   }
 }
+
+
+2. 	       Iterable i2 = arrxy;
+	         i2.forEach(arrxy::add);
+it shows error The type List<String> does not define add(Object) that is applicable here
+however, if you revise the code like this
+          Iterable<String> i2 = arrxy;
+	        i2.forEach(arrxy::add);
+it will be ok. Why???
