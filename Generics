@@ -43,3 +43,10 @@ if the generics have multi constraints, it will erasure based on the first const
 why this happened is that the JVM doesn't support generics directly.
 
 type check aims at reference not object.
+
+
+there is a interfaceName<T>, if when we create object: interfaceName abc = (); that we leave out <T>.
+
+9. In an anonymous class, it can only access the final field of the nested class, as the anonymous class is enclosure and it
+will copy the value of variable outside, so if you change the value of outside variable, it will be confused which version that
+the anonymous class should access, so it should be final type.
