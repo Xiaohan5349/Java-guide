@@ -10,3 +10,25 @@
  set() method as the cursor has no element positon.
 
  Ps:  initially any iterator reference will point to the index just before the index of first element in a collection.
+
+2. An ImmutableList does not allow null element either.
+Advantages of ImmutableList£º
+  They are thread safe.
+  They are memory efficient.
+  Since they are immutable, hence they can be passed over to third party libraries without any problem.
+
+  PS: It is an immutable collection, not collection of immutable objects, so the objects inside it can be modified. That means
+  the operation that add, remove and update element is not allowed.
+
+3. ArrayBlockingQueue.take(), this method invlove with thread, we can go back while we learn thread.
+
+4. enum internally implemented by class:
+class color{                                                                enum color{
+public static final color RED = new color();                                RED,GREEN,YELLOW;
+public static final color GREEN = new color();                              }
+public static final color YELLOW = new color();
+}
+
+5. queue and stack are two data structure implemented by array or linkedlist or any other array forms. linkedlist has all the
+method that queue and stack have, we can regard them as restricted linkedList. We use queue or stack rather than linkedlist for
+better performance and easier standing on the code.
