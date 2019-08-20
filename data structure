@@ -32,3 +32,6 @@ public static final color YELLOW = new color();
 5. queue and stack are two data structure implemented by array or linkedlist or any other array forms. linkedlist has all the
 method that queue and stack have, we can regard them as restricted linkedList. We use queue or stack rather than linkedlist for
 better performance and easier standing on the code.
+
+6. HashSet are internally supported by a hashmap, as the hashmap store the objects with a key-value pair, the object we insert
+acts as key and java use constant to be its value, so in hashset all keys has a same value.
