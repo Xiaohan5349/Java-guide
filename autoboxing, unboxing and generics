@@ -50,5 +50,3 @@ public class Test{
     double x1 = p1.getX(); String x2 = p1.getY();
     p1.setXY(x1, y1);
 }
-we can also create generics interface. we can use extends to limit the type of generics.
-jvm+java api=jre

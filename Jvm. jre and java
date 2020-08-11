@@ -1,0 +1,5 @@
+we can also create generics interface. we can use extends to limit the type of generics.
+jvm+java api=jre
+java ee: enterprise edition
+java se: standard edition
+java me: micro edition
