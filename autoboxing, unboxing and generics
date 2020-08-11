@@ -51,3 +51,4 @@ public class Test{
     p1.setXY(x1, y1);
 }
 we can also create generics interface. we can use extends to limit the type of generics.
+jvm+java api=jre
